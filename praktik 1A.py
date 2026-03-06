@@ -1,4 +1,5 @@
-// 
+# PHYTON LIST 
+
 # Mendefinisikan list daya sistem (Sistem Monitoring Kesehatan Sederhana)
 detak_jantung = [81.6, 80.2, 78.5, 75.3, 73.9]
 
@@ -15,4 +16,4 @@ detak_jantung.append(72.8)
 print(f"usia < 60 tahun : {detak_jantung[5]} bpm")
 
 
-//
+#
