@@ -27,12 +27,12 @@ for data in detak_jantung :
 #FUNCTION
 
 #Fungsi untuk mengecek detak jantung berdasarkan usia
-def cek(deyut):
-    if deyut < 74:
+def cek(data):
+    if data < 74:
         return "LANSIA (usia 60 keatas)"
     else:
         return "Tidak lansia"
         
 for data in detak_jantung:
-    usia = cek(deyut)
+    usia = cek(data)
     print(f"Detak Jantung {data} -> usia: {usia} ")
