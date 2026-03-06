@@ -41,5 +41,5 @@ def cek(index):
         
         
 for data in detak_jantung:
-    usia = cek(data)
-    print(f"Detak Jantung {data} -> usia: {usia} ")
+    index = cek(data)
+    print(f"Detak Jantung {index} -> usia: {usia} ")
