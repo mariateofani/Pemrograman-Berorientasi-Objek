@@ -28,10 +28,10 @@ for data in detak_jantung :
 
 #Fungsi untuk mengecek detak jantung berdasarkan usia
 def cek(data):
-    if data >= 18 and umur <= 20:
-    print("Usia 18-20 tahun")
-elif umur >= 21 and umur <= 30:
-    print("Usia 21-30 tahun")
+    if data >= 81 and umur <= 82:
+        return("Usia 18-20 tahun")
+    elif umur >= 21 and umur <= 30:
+     return("Usia 21-30 tahun")
 elif umur >= 31 and umur <= 40:
     print("Usia 31-40 tahun")
 elif umur >= 41 and umur <= 50:
