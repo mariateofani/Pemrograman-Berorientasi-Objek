@@ -14,8 +14,8 @@ detak_jantung.append(75)
 #FUNCTION
 
 #Fungsi untuk menganalisa kondisi detak jantung
-def analisa_kondisi(bpm):
-    if bpm > 100:
+def analisa_kondisi(Nilai BPM):
+    if Nilai BPM > 100:
         return "Peringatan Takikardia (Detak Tinggi)"
     else:
         return "Kondisi Normal"
@@ -23,10 +23,10 @@ def analisa_kondisi(bpm):
         
 # ITERATION
 # Mencetak semua data detak jantung
-print("Daftar Riwayat Detak Jantung:")
+print("Hasil Analisa Detak Jantung:\n")
 
-for data in detak_jantung:
-    print(f"Data ke-[x]: {data} BPM")
-    
+for x, bpm in enumerate(detak_jantung, start=1):
+    status = analisa_kondisi(bpm)
+    print(f"Data ke-{x}: {bpm} BPM -> {status}")
     
     
