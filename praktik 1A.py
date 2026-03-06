@@ -20,6 +20,10 @@ print(f"usia < 60 tahun : {detak_jantung[5]} bpm")
 
 # Mencetak semua data detak detak_jantung
 print("Daftar rentan detak jantung saat istirahat : ")
-
 for data in detak_jantung :
-    print(f"- Nilai: {data} bpm")
+    print(f"Detak jantung: {data} bpm")
+    
+
+#FUNCTION
+
+#
