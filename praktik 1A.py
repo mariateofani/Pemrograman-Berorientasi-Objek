@@ -30,11 +30,11 @@ for data in detak_jantung :
 def cek(data):
     if data >= 81 and umur <= 82:
         return("Usia 18-20 tahun")
-    elif data >= 80 and umur <= 81:
+    elif data >= 79 and umur <= 81:
         return("Usia 21-30 tahun")
-    elif data >= 79 and umur <= 80:
+    elif data >= 76 and umur <= 79:
         return("Usia 31-40 tahun")
-    elif data >= 41 and umur <= 7:
+    elif data >= 78 and umur <= 76:
         return("Usia 41-50 tahun")
     elif data >=
         return("Usia 51-60 tahun")
