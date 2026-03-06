@@ -8,3 +8,5 @@ print(f"usia 31-40 tahun : {detak_jantung[2]} bpm")
 print(f"usia 41-50 tahun : {detak_jantung[3]} bpm")
 print(f"usia 51-60 tahun : {detak_jantung[4]} bpm")
 
+# Menambah data baru
+detak_jantung.append(72)
