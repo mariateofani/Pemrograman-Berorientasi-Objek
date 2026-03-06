@@ -17,7 +17,7 @@ detak_jantung.append(72.8)
 print("Daftar rentan detak jantung saat istirahat : ")
 for data in detak_jantung :
     print(f"Detak jantung: {data} bpm")
- print()
+print()
     
 
 #FUNCTION
@@ -26,11 +26,11 @@ for data in detak_jantung :
 print("Data detak jantung normal : ")
 def cek(data):
     if data == 81.6:
-        return "Usia 18-20 tahun"
+        return "18-20 tahun"
     elif data == 80.2:
-        return "Usia 21-30 tahun"
+        return "21-30 tahun"
     elif data == 78.5:
-        return "Usia 31-40 tahun"
+        return "31-40 tahun"
     elif data == 75.3:
         return "Usia 41-50 tahun"
     elif data == 73.9:
