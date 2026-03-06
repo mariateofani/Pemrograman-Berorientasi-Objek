@@ -26,7 +26,7 @@ def analisa_kondisi(bpm):
 print("Daftar Riwayat Detak Jantung:")
 
 for data in detak_jantung:
-    print(f"Detak Jantung: {data} BPM")
+    print(f"Data ke-[x]: {data} BPM")
     
     
     
