@@ -14,14 +14,16 @@ detak_jantung.append(72.8)
 # ITERATION
 
 # Mencetak semua data detak detak_jantung
-print("Daftar rentan detak jantung saat istirahat : \n")
+print("Daftar rentan detak jantung saat istirahat : ")
 for data in detak_jantung :
     print(f"Detak jantung: {data} bpm")
+    print()
     
 
 #FUNCTION
 
 #Fungsi untuk mengecek detak jantung berdasarkan usia
+print("Data detak jantung")
 def cek(index):
     if index == 0:
         return "18-20 tahun"
