@@ -25,8 +25,8 @@ def analisa_kondisi(Nilai BPM):
 # Mencetak semua data detak jantung
 print("Hasil Analisa Detak Jantung:\n")
 
-for x, bpm in enumerate(detak_jantung, start=1):
-    status = analisa_kondisi(bpm)
-    print(f"Data ke-{x}: {bpm} BPM -> {status}")
+for x, Nilai BPM in enumerate(detak_jantung, start=1):
+    status = analisa_kondisi(Nilai BPM)
+    print(f"Data ke-{x}: {Nilai BPM} BPM -> {status}")
     
     
