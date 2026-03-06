@@ -31,13 +31,14 @@ def cek(data):
     if data >= 81 and umur <= 82:
         return("Usia 18-20 tahun")
     elif umur >= 21 and umur <= 30:
-     return("Usia 21-30 tahun")
-elif umur >= 31 and umur <= 40:
-    print("Usia 31-40 tahun")
-elif umur >= 41 and umur <= 50:
-    print("Usia 41-50 tahun")
-else:
-    print("Usia di luar kategori")
+        return("Usia 21-30 tahun")
+    elif umur >= 31 and umur <= 40:
+        return("Usia 31-40 tahun")
+    elif umur >= 41 and umur <= 50:
+        return("Usia 41-50 tahun")
+    elif data
+    else:
+        return("Usia di luar kategori")
     
     if data < 73:
         return "LANSIA (usia 60 keatas)"
