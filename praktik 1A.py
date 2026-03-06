@@ -28,7 +28,7 @@ for data in detak_jantung :
 
 #Fungsi untuk mengecek detak jantung berdasarkan usia
 def cek(data):
-    if data < 74:
+    if data < 73:
         return "LANSIA (usia 60 keatas)"
     else:
         return "Tidak lansia"
