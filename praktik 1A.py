@@ -35,4 +35,4 @@ def cek(deyut):
         
 for data in detak_jantung:
     usia = cek(deyut)
-    print(f"Detak Jantung {data}")
+    print(f"Detak Jantung {data} -> usia: {usia} ")
