@@ -34,4 +34,5 @@ def cek(deyut):
         return "Tidak lansia"
         
 for data in detak_jantung:
-    
+    usia = cek(deyut)
+    print(f"")
