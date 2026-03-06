@@ -16,4 +16,7 @@ detak_jantung.append(72.8)
 print(f"usia < 60 tahun : {detak_jantung[5]} bpm")
 
 
-#
+# ITERATION
+
+# Mencetak semua data detak detak_jantung
+print()
