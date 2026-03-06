@@ -22,11 +22,11 @@ def analisa_kondisi(bpm):
         
         
 # ITERATION
-print("Hasil Analisa Detak Jantung:\n")
+# Mencetak semua data detak jantung
+print("Daftar Riwayat Detak Jantung:")
 
-for i, bpm in enumerate(detak_jantung, start=1):
-    status = analisa_kondisi(bpm)
-    print(f"Data ke-{i}: {bpm} BPM -> {status}")
+for data in detak_jantung:
+    print(f"Detak Jantung: {data} BPM")
     
     
     
