@@ -1,14 +1,14 @@
 # PHYTON LIST 
 
 # Mendefinisikan list daya sistem (Sistem Monitoring Kesehatan Sederhana)
-detak_jantung = [81.6, 80.2, 78.5, 75.3, 73.9]
+detak_jantung = [70, 110, 65, 120, 80, 140]
 
 #Mengakses data berdasarkan index (dimulai dari 0)
 print(f"Data Pertama : {detak_jantung[0]} bpm\n")
 
 
 # Menambah data baru
-detak_jantung.append(72.8)
+detak_jantung.append(75)
 
 
 # ITERATION
@@ -41,3 +41,7 @@ def cek(data):
 for data in detak_jantung:
     usia = cek(data)
     print(f"Detak Jantung {data} bpm -> Usia: {usia} ")
+    
+    
+    
+    
