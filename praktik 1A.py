@@ -19,6 +19,14 @@ def analisa_kondisi(bpm):
         return "Peringatan Takikardia (Detak Tinggi)"
     else:
         return "Kondisi Normal"
+        
+
+# ITERATION
+print("Hasil Analisa Detak Jantung:\n")
+
+for data, bpm in enumerate(detak_jantung, start=1):
+    status = analisa_kondisi(bpm)
+    print(f"Data ke-{i}: {bpm} BPM -> {status}")
     
     
     
