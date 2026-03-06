@@ -1,0 +1,40 @@
+{
+  "sistem": "Monitoring Kesehatan Sederhana",
+  "data_detak_jantung": [
+    {
+      "data_ke": 1,
+      "bpm": 70,
+      "status": "Kondisi Normal"
+    },
+    {
+      "data_ke": 2,
+      "bpm": 110,
+      "status": "Peringatan Takikardia (Detak Tinggi)"
+    },
+    {
+      "data_ke": 3,
+      "bpm": 65,
+      "status": "Kondisi Normal"
+    },
+    {
+      "data_ke": 4,
+      "bpm": 120,
+      "status": "Peringatan Takikardia (Detak Tinggi)"
+    },
+    {
+      "data_ke": 5,
+      "bpm": 80,
+      "status": "Kondisi Normal"
+    },
+    {
+      "data_ke": 6,
+      "bpm": 140,
+      "status": "Peringatan Takikardia (Detak Tinggi)"
+    },
+    {
+      "data_ke": 7,
+      "bpm": 75,
+      "status": "Kondisi Normal"
+    }
+  ]
+}
