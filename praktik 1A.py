@@ -26,5 +26,5 @@ for data in detak_jantung :
 
 #FUNCTION
 
-#Fungsi untuk mengecek usia berdasarkan
+#Fungsi untuk mengecek detak jantung berdasarkan usia
 def 
