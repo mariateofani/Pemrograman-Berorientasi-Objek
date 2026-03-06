@@ -32,12 +32,12 @@ def cek(data):
     elif data == 78.5:
         return "31-40 tahun"
     elif data == 75.3:
-        return "Usia 41-50 tahun"
+        return "41-50 tahun"
     elif data == 73.9:
-        return "Usia 51-60 tahun"
+        return "51-60 tahun"
     else:
-        return "Usia 60 tahun ke atas"
+        return "60 tahun ke atas"
         
 for data in detak_jantung:
     usia = cek(data)
-    print(f"Detak Jantung {data} -> bpm: {usia} ")
+    print(f"Detak Jantung {data} bpm -> Usia: {usia} ")
