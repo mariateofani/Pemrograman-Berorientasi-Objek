@@ -19,4 +19,5 @@ print(f"usia < 60 tahun : {detak_jantung[5]} bpm")
 # ITERATION
 
 # Mencetak semua data detak detak_jantung
-print()
+print("Daftar rentan detak jantung saat istirahat : ")
+for data in detak
