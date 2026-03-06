@@ -31,4 +31,7 @@ def cek(deyut):
     if deyut < 74:
         return "LANSIA (usia 60 keatas)"
     else:
-        return "Tidak"
+        return "Tidak lansia"
+        
+for data in detak_jantung:
+    
