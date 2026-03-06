@@ -37,8 +37,7 @@ def cek(data):
         return "Usia 51-60 tahun"
     else:
         return "Usia 60 tahun ke atas"
-
         
 for data in detak_jantung:
     usia = cek(data)
-    print(f"Detak Jantung {data} -> usia: {usia} ")
+    print(f"Detak Jantung {data} -> bpm: {usia} ")
