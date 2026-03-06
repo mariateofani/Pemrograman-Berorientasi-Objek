@@ -17,13 +17,14 @@ detak_jantung.append(72.8)
 print("Daftar rentan detak jantung saat istirahat : ")
 for data in detak_jantung :
     print(f"Detak jantung: {data} bpm")
-    print()
+
+print()
     
 
 #FUNCTION
 
 #Fungsi untuk mengecek detak jantung berdasarkan usia
-print("Data detak jantung")
+print("Data detak jantung normal : ")
 def cek(index):
     if index == 0:
         return "18-20 tahun"
