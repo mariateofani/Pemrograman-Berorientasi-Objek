@@ -24,9 +24,9 @@ def analisa_kondisi(bpm):
 # ITERATION
 print("Hasil Analisa Detak Jantung:\n")
 
-for data, bpm in enumerate(detak_jantung, start=1):
+for data in detak_jantung:
     status = analisa_kondisi(bpm)
-    print(f"Data ke-{i}: {bpm} BPM -> {status}")
+    print(f"Data ke-{data}: {bpm} BPM -> {status}")
     
     
     
