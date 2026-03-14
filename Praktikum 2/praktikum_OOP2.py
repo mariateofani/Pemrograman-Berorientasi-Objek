@@ -26,7 +26,7 @@ class Klinik:
 
         print("-" * 50)
         print(f"TOTAL PENDAPATAN HARI INI: Rp{total_pendapatan:,}")
-        print("-\n" * 50)
+        print("-" * 50 + "\n")
         
     def cari_pasien(self, nama):
         for p in self.daftar_antrean:
