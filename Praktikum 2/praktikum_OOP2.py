@@ -26,7 +26,13 @@ class Klinik:
 
         print("-" * 50)
         print(f"TOTAL PENDAPATAN HARI INI: Rp{total_pendapatan:,}")
-
+    def cari_pasien(self, nama):
+        for p in self.daftar_antrean:
+            if p.nama.lower() == nama.lower():
+                print(f"🔍 Pasien {nama} ditemukan dalam antrean.")
+            return p
+    print(f"❌ Pasien {nama} tidak ditemukan dalam antrean.")
+    return None
 
 klinik_kita = Klinik("Informatika Sehat")
 
@@ -41,14 +47,6 @@ klinik_kita.tambah_pasien(p3)
 
 
 klinik_kita.tampilkan_laporan()
-
-def cari_pasien(self, nama):
-    for p in self.daftar_antrean:
-        if p.nama.lower() == nama.lower():
-            print(f"🔍 Pasien {nama} ditemukan dalam antrean.")
-            return p
-    print(f"❌ Pasien {nama} tidak ditemukan dalam antrean.")
-    return None
     
-    klinik_kita.cari_pasien("Alpin")
-    klinik_kita.cari_pasien("Budi")
+klinik_kita.cari_pasien("Alpin")
+klinik_kita.cari_pasien("Budi")
