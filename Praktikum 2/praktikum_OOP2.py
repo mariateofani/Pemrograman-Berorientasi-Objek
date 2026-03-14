@@ -50,3 +50,5 @@ klinik_kita.tampilkan_laporan()
     
 klinik_kita.cari_pasien("Alpin")
 klinik_kita.cari_pasien("Budi")
+klinik_kita.cari_pasien("Feri")
+klinik_kita.cari_pasien("Bima")
