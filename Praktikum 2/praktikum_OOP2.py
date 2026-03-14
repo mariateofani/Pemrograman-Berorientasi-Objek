@@ -30,9 +30,9 @@ class Klinik:
         for p in self.daftar_antrean:
             if p.nama.lower() == nama.lower():
                 print(f"🔍 Pasien {nama} ditemukan dalam antrean.")
-            return p
-    print(f"❌ Pasien {nama} tidak ditemukan dalam antrean.")
-    return None
+                return p
+        print(f"❌ Pasien {nama} tidak ditemukan dalam antrean.")
+        return None
 
 klinik_kita = Klinik("Informatika Sehat")
 
