@@ -1,6 +1,6 @@
 # PHYTON LIST 
 
-# Mendefinisikan list daya sistem (Sistem Monitoring Kesehatan Sederhana)
+# Mendefinisikan list data sistem (Sistem Monitoring Kesehatan Sederhana)
 detak_jantung = [70, 110, 65, 120, 80, 140]
 
 #Mengakses data berdasarkan index (dimulai dari 0)
