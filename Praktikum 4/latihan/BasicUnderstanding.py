@@ -44,9 +44,9 @@ class Singa(Hewan):
         print(f"Asal: {self.asal}")
         print()
 
-kucing1 = Kucing("Kitty", "Mamalia", "Putih", "Panjang")
-paus1 = Paus("Blue Whale", "Mamalia", "30 meter", "120 ton")
-singa1 = Singa("Leo", "Mamalia", "190 kg", "Afrika")
+kucing1 = Kucing("Kucing", "Mamalia", "Putih", "Panjang")
+paus1 = Paus("Paus", "Mamalia", "30 meter", "120 ton")
+singa1 = Singa("Singa", "Mamalia", "190 kg", "Afrika")
 
 kucing1.tampilkan_info()
 paus1.tampilkan_info()
