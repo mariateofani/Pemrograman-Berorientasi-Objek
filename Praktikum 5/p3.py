@@ -19,7 +19,8 @@ class BarangElektronik(Barang):
     
   def to_dict(self):
       d = super().to_dict()
-      d.update({"tipe" : "elektronik", "garansi" :self.})
+      d.update({"tipe" : "elektronik", "garansi" :self.garansi})
+      return d
 
 class BarangKonsumsi(Barang):
   def __init__(self, id_barang, nama, harga, tgl_exp):
@@ -28,6 +29,8 @@ class BarangKonsumsi(Barang):
 
   def info(self):
     return f"{super().info()} | Tgl Exp: {self.tgl_exp}"
+    
+    
 
 barang1 = BarangElektronik("B001", "Laptop", 15000000, 24)
 barang2 = BarangKonsumsi("B002", "Susu", 50000, "15-12-2026")
