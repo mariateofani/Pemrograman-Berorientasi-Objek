@@ -51,6 +51,37 @@ class GudangPolimorfik:
             data = b.to_dict() for b in self.koleksi]
             json.dump(data, f, indent=4)
             
+            
+def nuat data(self):
+    if os.path.exists(self.file_db):
+        with open(self.file db, 'r') as f: data list json.load(f)
+        self.koleksi []
+        for d in data_list:
+            if d['tipe']="elektronik" : obj BarangElektronik(d['id'], d['name'], d['harga'), di garansi'])
+
+elif d['tipe'] "konsumsi":
+
+obj Barangkonsumsi (d['id'], d['name'], dị 'harga'], d[ 'tgl_exp'])
+
+else:
+
+obj Barang(d['id'], d['nama"], d['harga*1)
+
+self.koleksi.append(obj)
+
+def laporan stok(self):
+
+print("\n"+""*70)
+
+print(f"("ID":6} | NAMA BARANG:18) | ('HARGA:13) | KETERANGAN TAMBAHAN")")
+
+print(70)
+
+for bin self.koleksi:
+
+print(b.info())
+
+print("**70)
  
 barang1 = BarangElektronik("B001", "Laptop", 15000000, 24)
 barang2 = BarangKonsumsi("B002", "Susu", 50000, "15-12-2026")
