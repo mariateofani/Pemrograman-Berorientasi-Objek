@@ -44,6 +44,10 @@ class GudangPolimorfik:
 
    def tambah_barang(self, objek_barang):
        self.koleksi.append(objek_barang)
+       self.simpan_data()
+       
+    def simpan_data(self):
+        wi
  
 barang1 = BarangElektronik("B001", "Laptop", 15000000, 24)
 barang2 = BarangKonsumsi("B002", "Susu", 50000, "15-12-2026")
