@@ -8,7 +8,7 @@ class Barang:
     return f"[{self.id_barang}] {self.nama:15} | Rp{self.harga:10}"
   
   def to_dict(self):
-      return {"tipe" : "umum", "id" : self.id_barang,"nama" : self.nama
+      return {"tipe" : "umum", "id" : self.id_barang,"nama" : self.nama,"harga" : self.harga}
 
 class BarangElektronik(Barang):
   def __init__(self, id_barang, nama, harga, garansi):
@@ -16,6 +16,9 @@ class BarangElektronik(Barang):
     self.garansi = garansi
   def info(self):
     return f"{super().info()} | Garansi: {self.garansi} bln"
+    
+  def to_dict(self):
+      super
 
 class BarangKonsumsi(Barang):
   def __init__(self, id_barang, nama, harga, tgl_exp):
