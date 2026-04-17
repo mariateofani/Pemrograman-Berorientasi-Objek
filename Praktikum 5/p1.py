@@ -21,5 +21,9 @@ class KaryawanFreelance(Karyawan):
         
 daftar_karyawan = [
     KaryawanTetap("Andi", 500000)
-    KaryawanFreelance("")
-    KaryawanTetap("Citra", 700000)]
+    KaryawanFreelance("Budi", 100, 20000)
+    KaryawanTetap("Citra", 700000)
+    KaryawanFreelance("Dewi", 80, 25000)]
+    
+    
+    for kary
