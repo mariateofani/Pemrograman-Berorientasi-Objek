@@ -27,4 +27,6 @@ class Mobil(Kendaraan):
         
 class Motor(Kendaraan):
     def berjalan(self):
-        print("Motor terbang di ud
+        print("Motor berjalan di jalan raya")
+        
+daftar_kendaraan
