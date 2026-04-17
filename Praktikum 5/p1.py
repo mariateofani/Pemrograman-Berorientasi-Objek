@@ -11,4 +11,6 @@ class KaryawanTetap(Karyawan):
         self.gaji_bulanan = gaji_bulanan
         
 class KaryawanFreelance(Karyawan):
-    def __init__(self, nama,
+    def __init__(self, nama,jam_kerja,tarif_per_jam):
+        super().__init__(nama)
+        
