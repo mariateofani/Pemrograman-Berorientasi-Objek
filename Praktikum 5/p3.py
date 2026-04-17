@@ -48,7 +48,9 @@ class GudangPolimorfik:
        
     def simpan_data(self):
         with open (sefl.file_db, 'w') as f:
-            data = b.to_dict() for b in self
+            data = b.to_dict() for b in self.koleksi]
+            json.dump(data, f, indent=4)
+            
  
 barang1 = BarangElektronik("B001", "Laptop", 15000000, 24)
 barang2 = BarangKonsumsi("B002", "Susu", 50000, "15-12-2026")
