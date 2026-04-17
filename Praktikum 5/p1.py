@@ -13,4 +13,8 @@ class KaryawanTetap(Karyawan):
 class KaryawanFreelance(Karyawan):
     def __init__(self, nama,jam_kerja,tarif_per_jam):
         super().__init__(nama)
+        self.jam_kerja = jam_kerja
+        self.tarif_per_jam = tarif_per_jam
         
+    def hitung_gaji(self):
+        return self.jam
