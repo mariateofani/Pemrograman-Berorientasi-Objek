@@ -57,25 +57,19 @@ def nuat data(self):
         with open(self.file db, 'r') as f: data list json.load(f)
         self.koleksi []
         for d in data_list:
-            if d['tipe']="elektronik" : obj BarangElektronik(d['id'], d['name'], d['harga'), di garansi'])
-
-elif d['tipe'] "konsumsi":
-
-obj Barangkonsumsi (d['id'], d['name'], dị 'harga'], d[ 'tgl_exp'])
-
-else:
-
-obj Barang(d['id'], d['nama"], d['harga*1)
-
-self.koleksi.append(obj)
+            
+            if d['tipe']="elektronik" :
+                obj BarangElektronik(d['id'], d['name'], d['harga'), di garansi'])
+                elif d['tipe'] "konsumsi":
+                    obj Barangkonsumsi (d['id'], d['name'], dị 'harga'], d[ 'tgl_exp'])
+                    else:
+                        obj Barang(d['id'], d['nama"], d['harga*1)
+                        self.koleksi.append(obj)
 
 def laporan stok(self):
-
-print("\n"+""*70)
-
-print(f"("ID":6} | NAMA BARANG:18) | ('HARGA:13) | KETERANGAN TAMBAHAN")")
-
-print(70)
+    print("\n"+""*70)
+    print(f"("ID":6} | NAMA BARANG:18) | ('HARGA:13) | KETERANGAN TAMBAHAN")")
+    print(70)
 
 for bin self.koleksi:
 
