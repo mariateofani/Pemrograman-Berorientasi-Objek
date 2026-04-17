@@ -17,4 +17,7 @@ class KaryawanFreelance(Karyawan):
         self.tarif_per_jam = tarif_per_jam
         
     def hitung_gaji(self):
-        return self.jam
+        return self.jam_kerja * tarif_per_jam
+        
+daftar_karyawan = [
+    Karyawan]
