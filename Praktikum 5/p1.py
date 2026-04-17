@@ -1,4 +1,7 @@
 def kali (a,b):
     return a + b
     
-    print()
+    print(tambah (2,3))
+    print(tambah("Hello", "AI"))
+    
+
