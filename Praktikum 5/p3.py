@@ -19,7 +19,7 @@ class BarangElektronik(Barang):
     
   def to_dict(self):
       d = super().to_dict()
-      d.update({""})
+      d.update({"tipe" : "elektronik", "garansi" :self.})
 
 class BarangKonsumsi(Barang):
   def __init__(self, id_barang, nama, harga, tgl_exp):
