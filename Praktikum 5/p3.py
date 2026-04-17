@@ -38,7 +38,7 @@ class BarangKonsumsi(Barang):
       
 class GudangPolimorfik:
    def __init__(self,file_db= 'gudang_v3.json'):
-       file
+       self file_db 
 
    def 
  
