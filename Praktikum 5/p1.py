@@ -4,4 +4,6 @@ class Karyawan:
         
     def hitung_gaji(self):
         pass
-    
+
+class KaryawanTetap(Karyawan):
+    def __init__ (self,)
