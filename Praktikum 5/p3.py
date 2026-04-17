@@ -37,12 +37,12 @@ class BarangKonsumsi(Barang):
       return d
       
 class GudangPolimorfik:
-   def __init__(self, id_barang, nama, harga, tgl_exp):
+   def __init__(self,file_db ):
     super().__init__(id_barang, nama, harga)
     self.tgl_exp = tgl_exp
 
    def info(self):
-    return f"{super().info()} | Tgl Exp: {self.tgl_exp}"
+      return f"{super().info()} | Tgl Exp: {self.tgl_exp}"
     
     d.update({"tipe" : "konsumsi", "tgl_exp" :self.tgl_exp})
       return 
