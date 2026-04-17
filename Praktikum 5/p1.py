@@ -1,5 +1,5 @@
 class Karyawan:
-    def __init__ (self,nama):
+    def __init__(self,nama):
         self.nama = nama
         
     def hitung_gaji(self):
@@ -10,4 +10,5 @@ class KaryawanTetap(Karyawan):
         super().__init__(nama)
         self.gaji_bulanan = gaji_bulanan
         
-class K
+class KaryawanFreelance(Karyawan):
+    def __init__(self, nama,
