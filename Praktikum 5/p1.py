@@ -35,4 +35,5 @@ daftar_kendaraan = [
     Motor()
     ]
     
-for kenda
+for kendaraan in daftar_kendaraan:
+    kendaraan.berjalan()
