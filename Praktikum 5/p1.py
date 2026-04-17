@@ -26,4 +26,5 @@ daftar_karyawan = [
     KaryawanFreelance("Dewi", 80, 25000)]
     
     
-    for kary
+for karyawan in daftar_karyawan:
+    print(f"Nama: {karyawan.nama
