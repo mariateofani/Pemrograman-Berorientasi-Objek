@@ -20,4 +20,4 @@ class KaryawanFreelance(Karyawan):
         return self.jam_kerja * tarif_per_jam
         
 daftar_karyawan = [
-    Karyawan]
+    KaryawanTetap("Andi")]
