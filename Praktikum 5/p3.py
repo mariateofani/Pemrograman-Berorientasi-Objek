@@ -62,9 +62,9 @@ def muat_data(self):
             if d['tipe'] == "elektronik" :
                 obj = BarangElektronik(d['id'], d['nama'], d['harga'), di garansi'])
             elif d['tipe'] == "konsumsi":
-                obj Barangkonsumsi (d['id'], d['nama'], d 'harga'], d[ 'tgl_exp'])
+                obj Barangkonsumsi (d['id'], d['nama'], d['harga'], d['tgl_exp'])
             else:
-                obj Barang(d['id'], d['nama"], d['harga*1)
+                obj = Barang(d['id'], d['nama'], d['harga'])
             self.koleksi.append(obj)
 
 def laporan stok(self):
