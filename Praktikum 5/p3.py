@@ -60,7 +60,7 @@ def nuat data(self):
             
             if d['tipe']="elektronik" :
                 obj BarangElektronik(d['id'], d['name'], d['harga'), di garansi'])
-                elif d['tipe'] "konsumsi":
+                lif d['tipe'] "konsumsi":
                     obj Barangkonsumsi (d['id'], d['name'], dị 'harga'], d[ 'tgl_exp'])
                     else:
                         obj Barang(d['id'], d['nama"], d['harga*1)
@@ -70,12 +70,10 @@ def laporan stok(self):
     print("\n"+""*70)
     print(f"("ID":6} | NAMA BARANG:18) | ('HARGA:13) | KETERANGAN TAMBAHAN")")
     print(70)
+    for bin self.koleksi:
 
-for bin self.koleksi:
-
-print(b.info())
-
-print("**70)
+        print(b.info())
+    print("**70)
  
 barang1 = BarangElektronik("B001", "Laptop", 15000000, 24)
 barang2 = BarangKonsumsi("B002", "Susu", 50000, "15-12-2026")
