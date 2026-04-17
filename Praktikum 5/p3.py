@@ -1,3 +1,6 @@
+import json
+import os
+
 class Barang:
   def __init__(self, id_barang, nama, harga):
     self.id_barang = id_barang
@@ -30,7 +33,8 @@ class BarangKonsumsi(Barang):
   def info(self):
     return f"{super().info()} | Tgl Exp: {self.tgl_exp}"
     
-    
+    d.update({"tipe" : "konsumsi", "tgl_exp" :self.tgl_exp})
+      return d
 
 barang1 = BarangElektronik("B001", "Laptop", 15000000, 24)
 barang2 = BarangKonsumsi("B002", "Susu", 50000, "15-12-2026")
