@@ -6,4 +6,5 @@ class Karyawan:
         pass
 
 class KaryawanTetap(Karyawan):
-    def __init__ (self,)
+    def __init__ (self, nama, gaji_bulanan):
+        super().__init__
