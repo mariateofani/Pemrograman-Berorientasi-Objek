@@ -18,7 +18,8 @@ class BarangElektronik(Barang):
     return f"{super().info()} | Garansi: {self.garansi} bln"
     
   def to_dict(self):
-      super
+      d = super().to_dict()
+      d.update({""})
 
 class BarangKonsumsi(Barang):
   def __init__(self, id_barang, nama, harga, tgl_exp):
