@@ -59,10 +59,10 @@ def muat_data(self):
         self.koleksi []
         for d in data_list:
             
-            if d['tipe']== "elektronik" :
-                obj BarangElektronik(d['id'], d['name'], d['harga'), di garansi'])
-            elif d['tipe'] "konsumsi":
-                obj Barangkonsumsi (d['id'], d['name'], dị 'harga'], d[ 'tgl_exp'])
+            if d['tipe'] == "elektronik" :
+                obj = BarangElektronik(d['id'], d['nama'], d['harga'), di garansi'])
+            elif d['tipe'] == "konsumsi":
+                obj Barangkonsumsi (d['id'], d['nama'], d 'harga'], d[ 'tgl_exp'])
             else:
                 obj Barang(d['id'], d['nama"], d['harga*1)
             self.koleksi.append(obj)
