@@ -7,7 +7,8 @@ class Barang:
   def info(self):
     return f"[{self.id_barang}] {self.nama:15} | Rp{self.harga:10}"
   
-  def to
+  def to_dict(self):
+      return {"tipe" : "umum"
 
 class BarangElektronik(Barang):
   def __init__(self, id_barang, nama, harga, garansi):
