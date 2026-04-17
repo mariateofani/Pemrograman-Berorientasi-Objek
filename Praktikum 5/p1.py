@@ -12,3 +12,10 @@ def kali (c, d):
     
     print(kali(2,3))
     print(kali("Hello", 3))
+
+class Kendaraan:
+   def berjalan(self):
+  print("Motor berjalan dengan cepat")
+  
+class pesawat(Kendaraan):
+    def
