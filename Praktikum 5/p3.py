@@ -69,7 +69,7 @@ def muat_data(self):
 
 def laporan stok(self):
     print("\n" + "="*70)
-    print(f"("ID":6} | {'NAMA BARANG':18) | ('HARGA:13) | KETERANGAN TAMBAHAN")")
+    print(f"("ID":6} | {'NAMA BARANG':18} | {'HARGA':13} | {'KETERANGAN TAMBAHAN'})
     print(70)
     for bin self.koleksi:
 
