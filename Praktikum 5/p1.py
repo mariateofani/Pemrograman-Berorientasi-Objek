@@ -21,4 +21,10 @@ class Pesawat(Kendaraan):
     def berjalan(self):
         print("Pesawat terbang di udara")
         
+class Mobil(Kendaraan):
+    def berjalan(self):
+        print("Mobil berjalan di jalan raya")
         
+class Motor(Kendaraan):
+    def berjalan(self):
+        print("Motor terbang di ud
