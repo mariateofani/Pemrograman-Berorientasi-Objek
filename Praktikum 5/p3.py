@@ -36,46 +36,57 @@ class BarangKonsumsi(Barang):
     d.update({"tipe" : "konsumsi", "tgl_exp" :self.tgl_exp})
       return d
       
+
 class GudangPolimorfik:
-   def __init__(self,file_db= 'gudang_v3.json'):
-       self file_db = file_db
-       self koleksi = []
-       self muat_data()
+    def __init__(self, file_db='gudang_v3.json'):
+        self.file_db = file_db
+        self.koleksi = []
+        self.muat_data()
 
-   def tambah_barang(self, objek_barang):
-       self.koleksi.append(objek_barang)
-       self.simpan_data()
-       
+    def tambah_barang(self, objek_barang):
+        self.koleksi.append(objek_barang)
+        self.simpan_data()
+
     def simpan_data(self):
-        with open (sefl.file_db, 'w') as f:
-            data = b.to_dict() for b in self.koleksi]
+        with open(self.file_db, 'w') as f:
+            data = [b.to_dict() for b in self.koleksi]
             json.dump(data, f, indent=4)
-            
-           
-def muat_data(self):
-    if os.path.exists(self.file_db):
-        with open(self.file db, 'r') as f: 
-        data_list = json.load(f)
-        self.koleksi []
-        for d in data_list:
-            
-            if d['tipe'] == "elektronik" :
-                obj = BarangElektronik(d['id'], d['nama'], d['harga'), di garansi'])
-            elif d['tipe'] == "konsumsi":
-                obj Barangkonsumsi (d['id'], d['nama'], d['harga'], d['tgl_exp'])
-            else:
-                obj = Barang(d['id'], d['nama'], d['harga'])
-            self.koleksi.append(obj)
 
-def laporan stok(self):
-    print("\n" + "="*70)
-    print(f"("ID":6} | {'NAMA BARANG':18} | {'HARGA':13} | {'KETERANGAN TAMBAHAN'}")
-    print("-"*70)
-    for b in self.koleksi:
+    def muat_data(self):
+        if os.path.exists(self.file_db):
+            with open(self.file_db, 'r') as f:
+                data_list = json.load(f)
+                self.koleksi = []
+                for d in data_list:
+                    if d['tipe'] == "elektronik":
+                        obj = BarangElektronik(d['id'], d['nama'], d['harga'], d['garansi'])
+                    elif d['tipe'] == "konsumsi":
+                        obj = BarangKonsumsi(d['id'], d['nama'], d['harga'], d['tgl_exp'])
+                    else:
+                        obj = Barang(d['id'], d['nama'], d['harga'])
+                    self.koleksi.append(obj)
 
-        print(b.info())
-    print("="*70)
- 
+    def laporan_stok(self):
+        print("\n" + "="*70)
+        print(f"{'ID':6} | {'NAMA BARANG':18} | {'HARGA':13} | {'KETERANGAN TAMBAHAN'}")
+        print("-" * 70)
+        for b in self.koleksi:
+            print(b.info())
+        print("-" * 70)
+
+def main():
+    app = GudangPolimorfik()
+    
+    if not app.koleksi:
+        print("Database kosong, membuat data awal...")
+        app.tambah_barang(BarangElektronik("E01", "Laptop Pro", 12000000, 12))
+        app.tambah_barang(BarangKonsumsi("K02", "Roti Coklat", 15000, "2026-05-10"))
+        app.tambah_barang(Barang("U03", "Kabel Data", 25000))
+    
+    app.laporan_stok()
+
+if __name__ == "__main__":
+    main()
 barang1 = BarangElektronik("B001", "Laptop", 15000000, 24)
 barang2 = BarangKonsumsi("B002", "Susu", 50000, "15-12-2026")
 
