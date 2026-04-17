@@ -51,8 +51,8 @@ class GudangPolimorfik:
             data = b.to_dict() for b in self.koleksi]
             json.dump(data, f, indent=4)
             
-            
-def nuat data(self):
+           
+def muat_data(self):
     if os.path.exists(self.file_db):
         with open(self.file db, 'r') as f: data list json.load(f)
         self.koleksi []
@@ -60,11 +60,11 @@ def nuat data(self):
             
             if d['tipe']="elektronik" :
                 obj BarangElektronik(d['id'], d['name'], d['harga'), di garansi'])
-                lif d['tipe'] "konsumsi":
-                    obj Barangkonsumsi (d['id'], d['name'], dị 'harga'], d[ 'tgl_exp'])
-                    else:
-                        obj Barang(d['id'], d['nama"], d['harga*1)
-                        self.koleksi.append(obj)
+            elif d['tipe'] "konsumsi":
+                obj Barangkonsumsi (d['id'], d['name'], dị 'harga'], d[ 'tgl_exp'])
+            else:
+                obj Barang(d['id'], d['nama"], d['harga*1)
+            self.koleksi.append(obj)
 
 def laporan stok(self):
     print("\n"+""*70)
