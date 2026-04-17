@@ -27,4 +27,5 @@ daftar_karyawan = [
     
     
 for karyawan in daftar_karyawan:
-    print(f"Nama: {karyawan.nama
+    print(f"Nama: {karyawan.nama}")
+    print(f"Gaji: {karyawan.hitung_gaji()")
