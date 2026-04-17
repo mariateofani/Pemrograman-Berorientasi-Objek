@@ -7,4 +7,7 @@ class Karyawan:
 
 class KaryawanTetap(Karyawan):
     def __init__ (self, nama, gaji_bulanan):
-        super().__init__
+        super().__init__(nama)
+        self.gaji_bulanan = gaji_bulanan
+        
+class K
