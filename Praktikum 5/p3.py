@@ -54,7 +54,8 @@ class GudangPolimorfik:
            
 def muat_data(self):
     if os.path.exists(self.file_db):
-        with open(self.file db, 'r') as f: data list json.load(f)
+        with open(self.file db, 'r') as f: 
+        data_list = json.load(f)
         self.koleksi []
         for d in data_list:
             
