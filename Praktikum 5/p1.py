@@ -15,8 +15,10 @@ def kali (c, d):
 
 class Kendaraan:
     def berjalan(self):
-        print("Kendaraan berjalan dengan cepat")
+        print("Kendaraan sedang berjalan")
   
-class pesawat(Kendaraan):
+class Pesawat(Kendaraan):
     def berjalan(self):
-        print
+        print("Pesawat terbang di udara")
+        
+        
