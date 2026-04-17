@@ -29,4 +29,10 @@ class Motor(Kendaraan):
     def berjalan(self):
         print("Motor berjalan di jalan raya")
         
-daftar_kendaraan
+daftar_kendaraan = [
+    Pesawat()
+    Mobil()
+    Motor()
+    ]
+    
+for kenda
