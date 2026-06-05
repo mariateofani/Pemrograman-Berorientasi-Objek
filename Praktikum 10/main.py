@@ -11,4 +11,7 @@ def load_users():
  with open(FILE_NAME, "r") as f:
  return json.load(f)
  
- 
+ # Fungsi untuk menyimpan data pengguna
+def save_users(users):
+ with open(FILE_NAME, "w") as f:
+ json.dump(users, f)
