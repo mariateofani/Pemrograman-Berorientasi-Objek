@@ -10,3 +10,5 @@ def load_users():
  return {}
  with open(FILE_NAME, "r") as f:
  return json.load(f)
+ 
+ 
