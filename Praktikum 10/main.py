@@ -37,5 +37,36 @@ def login():
  messagebox.showinfo("Login", "Login Berhasil! Selamat
 Datang.")
  else:
-     messagebox.showerror("Login", "Username atau Password
+    messagebox.showerror("Login", "Username atau Password
 Salah!")
+
+# Setup UI
+root = tk.Tk()
+root.title("Sistem Informasi - Login/Register")
+root.geometry("300x250")
+tk.Label(root, text="Username:").pack(pady=5)
+entry_user = tk.Entry(root)
+entry_user.pack()
+tk.Label(root, text="Password:").pack(pady=5)
+# Parameter show="*" digunakan untuk menyamarkan ketikan
+password
+entry_pwd = tk.Entry(root, show="*")
+entry_pwd.pack()
+btn_login = tk.Button(root, text="Login", command=login)
+btn_login.pack(pady=5)
+btn_reg = tk.Button(root, text="Register", command=register)
+btn_reg.pack()
+# Menjalankan perulangan utama agar jendela aplikasi tetap
+terbuka
+root.mainloop()
+
+
+
+
+
+
+
+
+
+
+
