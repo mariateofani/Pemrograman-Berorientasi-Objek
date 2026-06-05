@@ -14,15 +14,14 @@ def load_users():
 # Fungsi untuk menyimpan data pengguna
 def save_users(users):
  with open(FILE_NAME, "w") as f:
- json.dump(users, f)
+    json.dump(users, f)
 
 def register():
  user = entry_user.get()
  pwd = entry_pwd.get()
  users = load_users()
  if user in users:
- messagebox.showerror("Error", "Username sudah
-terdaftar!")
+    messagebox.showerror("Error", "Username sudah terdaftar!")
  else:
  users[user] = pwd
  save_users(users)
